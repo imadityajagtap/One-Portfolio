@@ -190,7 +190,7 @@ header {
 /* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
 }
 
@@ -503,8 +503,8 @@ header {
 }
 
 .hero-img-box {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     /* Circle profile */
     overflow: hidden;
@@ -581,6 +581,17 @@ header {
 
     .hero-image-wrapper {
         width: 35%;
+    }
+
+    /* Restore grid for About on Desktop */
+    .about-content {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    /* Restore larger image on Desktop */
+    .hero-img-box {
+        width: 280px;
+        height: 280px;
     }
 }
 
