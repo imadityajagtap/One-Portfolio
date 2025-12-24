@@ -180,8 +180,19 @@ header {
 }
 
 .hero-btn {
-    padding: 18px 32px;
+    padding: 18px 10px;
     font-size: 1.1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* About Section */
@@ -497,6 +508,8 @@ header {
 .hero-image-wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
+    /* Spacing from buttons on mobile */
 }
 
 .hero-img-box {
@@ -578,6 +591,7 @@ header {
 
     .hero-image-wrapper {
         width: 35%;
+        margin-top: 0;
     }
 
     /* Restore grid for About on Desktop */
@@ -589,6 +603,19 @@ header {
     .hero-img-box {
         width: 280px;
         height: 280px;
+    }
+
+    /* Restore Buttons on Desktop */
+    .hero-cta {
+        display: block;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        width: auto;
+        padding: 18px 32px;
+        flex: none;
+        margin-right: 1rem;
     }
 
     /* Restore Nav on Desktop */
