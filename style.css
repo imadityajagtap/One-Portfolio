@@ -120,15 +120,9 @@ header {
     font-weight: 700;
 }
 
+/* Mobile Nav Hide */
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.nav-links a {
-    font-size: 0.9rem;
-    font-weight: 400;
+    display: none;
 }
 
 .nav-links a:not(.btn):hover {
@@ -145,9 +139,12 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 0;
-    /* Override section padding */
+    justify-content: center;
+    /* Center on mobile */
+    padding-top: 100px;
+    /* Space for fixed header */
+    text-align: center;
+    /* Center text on mobile */
 }
 
 .hero-greeting {
@@ -503,8 +500,8 @@ header {
 }
 
 .hero-img-box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     /* Circle profile */
     overflow: hidden;
@@ -592,6 +589,25 @@ header {
     .hero-img-box {
         width: 280px;
         height: 280px;
+    }
+
+    /* Restore Nav on Desktop */
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    /* Restore Hero Alignment on Desktop */
+    .hero {
+        justify-content: space-between;
+        padding-top: 0;
+        text-align: left;
     }
 }
 
